@@ -1,4 +1,4 @@
-package me.indychkov.client;
+package lab.client;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -12,7 +12,7 @@ public class Client {
         boolean onWork=true;
         System.out.println("Client starting");
         while (onWork) {
-            Socket server = new Socket("192.168.99.100", 8000);
+            Socket server = new Socket("127.0.0.1", 8000);
             DataInputStream in = new DataInputStream(server.getInputStream());
             DataOutputStream out = new DataOutputStream(server.getOutputStream());
             Scanner inConsole = new Scanner(System.in);

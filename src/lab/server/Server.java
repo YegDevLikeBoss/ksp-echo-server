@@ -1,4 +1,4 @@
-package me.indychkov.server;
+package lab.server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -12,6 +12,7 @@ public class Server {
 
         ServerSocket server = new ServerSocket(8000);
         System.out.println("Server starting!");
+
         boolean onWork = true;
         while(onWork){
             Socket client = server.accept();
